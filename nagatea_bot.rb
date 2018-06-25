@@ -21,7 +21,7 @@ poyo = ""
 while poyo == ""
     client.list_timeline(810045571905908737, count: 100).each do |tweet|
         poyo = tweet.user.status.text.to_s
-        if /@/ === poyo || /#/ === poyo || /twi/ === poyo || /http/ === poyo || /[ちまさく]ん/ === poyo || /【/ === poyo || tweet.user.status.user.screen_name == "_nagatea"
+        if /@/ === poyo || /#/ === poyo || /RT/ === poyo || /twi/ === poyo || /http/ === poyo || /[ちまさく]ん/ === poyo || /【/ === poyo || tweet.user.status.user.screen_name == "_nagatea"
         
         else
             break
